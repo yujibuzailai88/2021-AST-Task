@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+	
+	int number[7],index;
+	printf("7λ���֣�\n");
+	for(index=0;index<7;index++)
+	{
+		scanf("%d",&number[index]);
+	}
+
+
+	printf("ԭ:\n");
+	for(index=0;index<7;index++)
+	{
+		printf("%d",number[index]);
+	}
+
+	printf("\n");
+
+	int number_change[7],i;
+	
+	for(i=0,index=6;i<7,index>=0;i++,index--)
+	{
+		number_change[i]=number[index];
+	}
+
+	printf("��:\n");
+	for(i=0;i<7;i++)
+	{
+		printf("%d",number_change[i]);
+	}
+
+	printf("\n");
+	return 0;
+}
